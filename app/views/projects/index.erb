@@ -1,0 +1,10 @@
+<h1>ALL DA PROJECTS</h1>
+
+<ul>
+<% @projects.each do |project| %>
+  <li><%= link_to project.name, project %></li>
+    <ul>
+      <li>Desc: <%= project.description %></li>
+    </ul>
+<% end %>
+</ul>
